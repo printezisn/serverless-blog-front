@@ -7,13 +7,10 @@ export default () => (
     <Layout>
         <Helmet>
             <html lang="en" />
-            <title>Edna Blog</title>
+            <title>About | Edna Blog</title>
             <meta charset="utf-8" />
-            <meta
-                name="description"
-                content="The personal serverless blog of Nikos Printezis."
-            />
+            <meta name="description" content="The about page of Edna Blog." />
         </Helmet>
-        <h2>Hello world!</h2>
+        This is the about page.
     </Layout>
 )
