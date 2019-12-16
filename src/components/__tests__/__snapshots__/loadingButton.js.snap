@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingButton renders correctly when it's loading 1`] = `
+<button
+  className="button is-loading"
+  disabled={true}
+  type="submit"
+>
+  Test Text
+</button>
+`;
+
+exports[`LoadingButton renders correctly when it's not loading 1`] = `
+<button
+  className="button"
+  type="submit"
+>
+  Test Text
+</button>
+`;

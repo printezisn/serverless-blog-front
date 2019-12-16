@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageBox renders correctly when it's for errors and doesn't have any messages 1`] = `""`;
+
+exports[`MessageBox renders correctly when it's for errors and has 1 message 1`] = `
+<div
+  className="notification is-danger"
+>
+  msg1
+</div>
+`;
+
+exports[`MessageBox renders correctly when it's for errors and has more than 1 messages 1`] = `
+<div
+  className="notification is-danger"
+>
+  <ul>
+    <li>
+      msg1
+    </li>
+    <li>
+      msg2
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`MessageBox renders correctly when it's not for errors and doesn't have any messages 1`] = `""`;
+
+exports[`MessageBox renders correctly when it's not for errors and has 1 message 1`] = `
+<div
+  className="notification is-success"
+>
+  msg1
+</div>
+`;
+
+exports[`MessageBox renders correctly when it's not for errors and has more than 1 messages 1`] = `
+<div
+  className="notification is-success"
+>
+  <ul>
+    <li>
+      msg1
+    </li>
+    <li>
+      msg2
+    </li>
+  </ul>
+</div>
+`;

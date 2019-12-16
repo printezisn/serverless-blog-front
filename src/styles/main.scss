@@ -1,3 +1,25 @@
-@import "_colors";
 @import "~bulma/bulma.sass";
 
+main {
+    padding: 100px 0 20px 0;
+}
+
+.required-label label::after {
+    content: "*";
+    color: $red;
+    margin-left: 5px;
+}
+
+.small-form {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.notification ul {
+    list-style: disc;
+    padding-left: 10px;
+}

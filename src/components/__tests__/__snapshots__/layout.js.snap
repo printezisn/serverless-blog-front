@@ -3,7 +3,9 @@
 exports[`Layout renders correctly 1`] = `
 <div>
   <Header />
-  <main>
+  <main
+    className="container is-fluid"
+  >
     <span>
       Child
     </span>

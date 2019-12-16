@@ -5,7 +5,7 @@ exports[`Header renders correctly 1`] = `
   <Menu />
   <br />
   <h1
-    className="title has-text-centered"
+    className="title is-1 has-text-centered"
   >
     EDNA Blog
   </h1>

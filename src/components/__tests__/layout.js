@@ -7,13 +7,13 @@ jest.mock("../header", () => "Header")
 
 describe("Layout", () => {
     it("renders correctly", () => {
-        const menu = renderer
+        const layout = renderer
             .create(
                 <Layout>
                     <span>Child</span>
                 </Layout>
             )
             .toJSON()
-        expect(menu).toMatchSnapshot()
+        expect(layout).toMatchSnapshot()
     })
 })
