@@ -188,15 +188,16 @@ exports[`Create page renders correctly initially 1`] = `
             <p
               className="control"
             >
-              <button
+              <LoadingButton
                 className="button is-link"
+                isLoading={false}
                 type="submit"
               >
                 <i
                   className="fas fa-save"
                 />
                   Submit
-              </button>
+              </LoadingButton>
             </p>
             <p
               className="control"
@@ -412,15 +413,16 @@ exports[`Create page renders correctly when preview is closed 1`] = `
             <p
               className="control"
             >
-              <button
+              <LoadingButton
                 className="button is-link"
+                isLoading={false}
                 type="submit"
               >
                 <i
                   className="fas fa-save"
                 />
                   Submit
-              </button>
+              </LoadingButton>
             </p>
             <p
               className="control"
@@ -636,15 +638,16 @@ exports[`Create page renders correctly when preview is open 1`] = `
             <p
               className="control"
             >
-              <button
+              <LoadingButton
                 className="button is-link"
+                isLoading={false}
                 type="submit"
               >
                 <i
                   className="fas fa-save"
                 />
                   Submit
-              </button>
+              </LoadingButton>
             </p>
             <p
               className="control"
@@ -864,15 +867,16 @@ exports[`Create page renders correctly when submit has unexpected failure 1`] = 
             <p
               className="control"
             >
-              <button
+              <LoadingButton
                 className="button is-link"
+                isLoading={false}
                 type="submit"
               >
                 <i
                   className="fas fa-save"
                 />
                   Submit
-              </button>
+              </LoadingButton>
             </p>
             <p
               className="control"
@@ -1092,15 +1096,16 @@ exports[`Create page renders correctly when submit has validation errors 1`] = `
             <p
               className="control"
             >
-              <button
+              <LoadingButton
                 className="button is-link"
+                isLoading={false}
                 type="submit"
               >
                 <i
                   className="fas fa-save"
                 />
                   Submit
-              </button>
+              </LoadingButton>
             </p>
             <p
               className="control"
@@ -1320,15 +1325,16 @@ exports[`Create page renders correctly when submit is successful 1`] = `
             <p
               className="control"
             >
-              <button
+              <LoadingButton
                 className="button is-link"
+                isLoading={false}
                 type="submit"
               >
                 <i
                   className="fas fa-save"
                 />
                   Submit
-              </button>
+              </LoadingButton>
             </p>
             <p
               className="control"

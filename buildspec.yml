@@ -1,17 +1,19 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 10
-    commands:
-      - npm install -g gatsby
-      - npm install
-  build:
-    commands:
-      - npm run test
-      - npm run build
+    install:
+        runtime-versions:
+            nodejs: 10
+        commands:
+            - npm install -g gatsby
+            - npm install
+    build:
+        commands:
+            - echo "GATSBY_EDNABLOG_ROOT_URL=$GATSBY_EDNABLOG_ROOT_URL" > ./.env.production
+            - cat ./.env.production
+            - npm run test
+            - npm run build
 artifacts:
-  files:
-    - '**/*'
-  base-directory: public
+    files:
+        - "**/*"
+    base-directory: public
