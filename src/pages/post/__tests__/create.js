@@ -29,7 +29,7 @@ describe("Create page", () => {
         const page = renderer.create(<Create />)
         page.root
             .findByProps({
-                className: "button is-info is-small preview-button",
+                className: "button is-link preview-button",
             })
             .props.onClick()
 
@@ -40,7 +40,7 @@ describe("Create page", () => {
         const page = renderer.create(<Create />)
         page.root
             .findByProps({
-                className: "button is-info is-small preview-button",
+                className: "button is-link preview-button",
             })
             .props.onClick()
         page.root.findByType("MarkdownModal").props.onClose()

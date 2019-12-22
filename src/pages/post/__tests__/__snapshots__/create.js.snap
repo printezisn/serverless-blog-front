@@ -149,11 +149,14 @@ exports[`Create page renders correctly initially 1`] = `
               Use markdown
             </p>
             <button
-              className="button is-info is-small preview-button"
+              className="button is-link preview-button"
               onClick={[Function]}
               type="button"
             >
-              Preview
+              <i
+                className="fas fa-external-link-alt"
+              />
+                Preview
             </button>
             <div
               className="control"
@@ -186,10 +189,13 @@ exports[`Create page renders correctly initially 1`] = `
               className="control"
             >
               <button
-                className="button is-primary"
+                className="button is-link"
                 type="submit"
               >
-                Submit
+                <i
+                  className="fas fa-save"
+                />
+                  Submit
               </button>
             </p>
             <p
@@ -199,7 +205,10 @@ exports[`Create page renders correctly initially 1`] = `
                 className="button is-light"
                 href="/"
               >
-                Cancel
+                <i
+                  className="fas fa-arrow-left"
+                />
+                  Cancel
               </a>
             </p>
           </div>
@@ -364,11 +373,14 @@ exports[`Create page renders correctly when preview is closed 1`] = `
               Use markdown
             </p>
             <button
-              className="button is-info is-small preview-button"
+              className="button is-link preview-button"
               onClick={[Function]}
               type="button"
             >
-              Preview
+              <i
+                className="fas fa-external-link-alt"
+              />
+                Preview
             </button>
             <div
               className="control"
@@ -401,10 +413,13 @@ exports[`Create page renders correctly when preview is closed 1`] = `
               className="control"
             >
               <button
-                className="button is-primary"
+                className="button is-link"
                 type="submit"
               >
-                Submit
+                <i
+                  className="fas fa-save"
+                />
+                  Submit
               </button>
             </p>
             <p
@@ -414,7 +429,10 @@ exports[`Create page renders correctly when preview is closed 1`] = `
                 className="button is-light"
                 href="/"
               >
-                Cancel
+                <i
+                  className="fas fa-arrow-left"
+                />
+                  Cancel
               </a>
             </p>
           </div>
@@ -579,11 +597,14 @@ exports[`Create page renders correctly when preview is open 1`] = `
               Use markdown
             </p>
             <button
-              className="button is-info is-small preview-button"
+              className="button is-link preview-button"
               onClick={[Function]}
               type="button"
             >
-              Preview
+              <i
+                className="fas fa-external-link-alt"
+              />
+                Preview
             </button>
             <div
               className="control"
@@ -616,10 +637,13 @@ exports[`Create page renders correctly when preview is open 1`] = `
               className="control"
             >
               <button
-                className="button is-primary"
+                className="button is-link"
                 type="submit"
               >
-                Submit
+                <i
+                  className="fas fa-save"
+                />
+                  Submit
               </button>
             </p>
             <p
@@ -629,7 +653,10 @@ exports[`Create page renders correctly when preview is open 1`] = `
                 className="button is-light"
                 href="/"
               >
-                Cancel
+                <i
+                  className="fas fa-arrow-left"
+                />
+                  Cancel
               </a>
             </p>
           </div>
@@ -798,11 +825,14 @@ exports[`Create page renders correctly when submit has unexpected failure 1`] = 
               Use markdown
             </p>
             <button
-              className="button is-info is-small preview-button"
+              className="button is-link preview-button"
               onClick={[Function]}
               type="button"
             >
-              Preview
+              <i
+                className="fas fa-external-link-alt"
+              />
+                Preview
             </button>
             <div
               className="control"
@@ -835,10 +865,13 @@ exports[`Create page renders correctly when submit has unexpected failure 1`] = 
               className="control"
             >
               <button
-                className="button is-primary"
+                className="button is-link"
                 type="submit"
               >
-                Submit
+                <i
+                  className="fas fa-save"
+                />
+                  Submit
               </button>
             </p>
             <p
@@ -848,7 +881,10 @@ exports[`Create page renders correctly when submit has unexpected failure 1`] = 
                 className="button is-light"
                 href="/"
               >
-                Cancel
+                <i
+                  className="fas fa-arrow-left"
+                />
+                  Cancel
               </a>
             </p>
           </div>
@@ -1017,11 +1053,14 @@ exports[`Create page renders correctly when submit has validation errors 1`] = `
               Use markdown
             </p>
             <button
-              className="button is-info is-small preview-button"
+              className="button is-link preview-button"
               onClick={[Function]}
               type="button"
             >
-              Preview
+              <i
+                className="fas fa-external-link-alt"
+              />
+                Preview
             </button>
             <div
               className="control"
@@ -1054,10 +1093,13 @@ exports[`Create page renders correctly when submit has validation errors 1`] = `
               className="control"
             >
               <button
-                className="button is-primary"
+                className="button is-link"
                 type="submit"
               >
-                Submit
+                <i
+                  className="fas fa-save"
+                />
+                  Submit
               </button>
             </p>
             <p
@@ -1067,7 +1109,10 @@ exports[`Create page renders correctly when submit has validation errors 1`] = `
                 className="button is-light"
                 href="/"
               >
-                Cancel
+                <i
+                  className="fas fa-arrow-left"
+                />
+                  Cancel
               </a>
             </p>
           </div>
@@ -1236,11 +1281,14 @@ exports[`Create page renders correctly when submit is successful 1`] = `
               Use markdown
             </p>
             <button
-              className="button is-info is-small preview-button"
+              className="button is-link preview-button"
               onClick={[Function]}
               type="button"
             >
-              Preview
+              <i
+                className="fas fa-external-link-alt"
+              />
+                Preview
             </button>
             <div
               className="control"
@@ -1273,10 +1321,13 @@ exports[`Create page renders correctly when submit is successful 1`] = `
               className="control"
             >
               <button
-                className="button is-primary"
+                className="button is-link"
                 type="submit"
               >
-                Submit
+                <i
+                  className="fas fa-save"
+                />
+                  Submit
               </button>
             </p>
             <p
@@ -1286,7 +1337,10 @@ exports[`Create page renders correctly when submit is successful 1`] = `
                 className="button is-light"
                 href="/"
               >
-                Cancel
+                <i
+                  className="fas fa-arrow-left"
+                />
+                  Cancel
               </a>
             </p>
           </div>

@@ -179,10 +179,11 @@ export default class Create extends React.Component {
                                     <p className="help">Use markdown</p>
                                     <button
                                         type="button"
-                                        className="button is-info is-small preview-button"
+                                        className="button is-link preview-button"
                                         onClick={this.openPreview}
                                     >
-                                        Preview
+                                        <i className="fas fa-external-link-alt"></i>
+                                        &nbsp; Preview
                                     </button>
                                     <div className="control">
                                         <textarea
@@ -203,11 +204,12 @@ export default class Create extends React.Component {
                                 <div className="field is-grouped">
                                     <p className="control">
                                         <LoadingButton
-                                            className="button is-primary"
+                                            className="button is-link"
                                             type="submit"
                                             isLoading={this.state.isLoading}
                                         >
-                                            Submit
+                                            <i className="fas fa-save"></i>
+                                            &nbsp; Submit
                                         </LoadingButton>
                                     </p>
                                     <p className="control">
@@ -215,7 +217,8 @@ export default class Create extends React.Component {
                                             className="button is-light"
                                             to="/"
                                         >
-                                            Cancel
+                                            <i className="fas fa-arrow-left"></i>
+                                            &nbsp; Cancel
                                         </Link>
                                     </p>
                                 </div>

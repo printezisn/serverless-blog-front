@@ -2,10 +2,6 @@ import React from "react"
 import marked from "marked"
 
 export default class MarkdownModal extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         const className = this.props.isActive ? "modal is-active" : "modal"
         const text = marked(this.props.text)
