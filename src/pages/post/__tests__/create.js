@@ -4,7 +4,7 @@ import renderer from "react-test-renderer"
 jest.mock("../../../components/layout", () => "Layout")
 jest.mock("../../../components/markdownModal", () => "MarkdownModal")
 jest.mock("../../../components/messageBox", () => "MessageBox")
-jest.mock("../../../components/LoadingButton", () => "LoadingButton")
+jest.mock("../../../components/loadingButton", () => "LoadingButton")
 
 jest.mock("../../../api/postAPI", () => {
     return {
