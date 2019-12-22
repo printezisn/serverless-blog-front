@@ -19,7 +19,15 @@ h2 {
     margin-bottom: 30px;
 }
 
-.notification ul {
-    list-style: disc;
-    padding-left: 10px;
+.notification,
+.markdown {
+    ul {
+        list-style: disc;
+    }
+
+    ul,
+    ol {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
 }

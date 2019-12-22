@@ -3,6 +3,8 @@ import renderer from "react-test-renderer"
 
 import MarkdownModal from "../markdownModal"
 
+jest.mock("../markdown", () => "Markdown")
+
 describe("MarkdownModal", () => {
     it("renders correctly when it's not active", () => {
         const modal = renderer

@@ -10,7 +10,7 @@ exports[`MarkdownModal renders correctly when it's active 1`] = `
   <div
     className="modal-card"
   >
-    <header
+    <div
       className="modal-card-head"
     >
       <p
@@ -23,26 +23,27 @@ exports[`MarkdownModal renders correctly when it's active 1`] = `
         className="delete"
         onClick={[Function]}
       />
-    </header>
-    <section
+    </div>
+    <div
       className="modal-card-body"
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>Test active text.</p>
-",
-        }
-      }
-    />
-    <footer
+    >
+      <Markdown
+        text="Test active text."
+      />
+    </div>
+    <div
       className="modal-card-foot"
     >
       <button
         className="button"
         onClick={[Function]}
       >
-        Close
+        <i
+          className="fas fa-arrow-left"
+        />
+          Close
       </button>
-    </footer>
+    </div>
   </div>
 </div>
 `;
@@ -57,7 +58,7 @@ exports[`MarkdownModal renders correctly when it's not active 1`] = `
   <div
     className="modal-card"
   >
-    <header
+    <div
       className="modal-card-head"
     >
       <p
@@ -70,26 +71,27 @@ exports[`MarkdownModal renders correctly when it's not active 1`] = `
         className="delete"
         onClick={[Function]}
       />
-    </header>
-    <section
+    </div>
+    <div
       className="modal-card-body"
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>Test inactive text.</p>
-",
-        }
-      }
-    />
-    <footer
+    >
+      <Markdown
+        text="Test inactive text."
+      />
+    </div>
+    <div
       className="modal-card-foot"
     >
       <button
         className="button"
         onClick={[Function]}
       >
-        Close
+        <i
+          className="fas fa-arrow-left"
+        />
+          Close
       </button>
-    </footer>
+    </div>
   </div>
 </div>
 `;
