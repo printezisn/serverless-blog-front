@@ -13,4 +13,11 @@ module.exports = {
     },
     testURL: `http://localhost`,
     setupFiles: [`<rootDir>/loadershim.js`],
+    verbose: true,
+    collectCoverage: true,
+    coverageThreshold: {
+        global: {
+            lines: 80,
+        },
+    },
 }

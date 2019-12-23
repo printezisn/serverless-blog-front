@@ -12,6 +12,25 @@ class PostAPI {
 
         return response.json()
     }
+
+    async updatePost(post) {
+        const response = await fetch(this.root, {
+            method: "POST",
+            mode: "cors",
+            body: JSON.stringify(post),
+        })
+
+        return response.json()
+    }
+
+    async getPost(id) {
+        const response = await fetch(this.root + id, {
+            method: "GET",
+            mode: "cors",
+        })
+
+        return response.json()
+    }
 }
 
 export const postAPI = new PostAPI()

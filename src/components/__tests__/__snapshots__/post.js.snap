@@ -1,0 +1,2697 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create post renders correctly initially 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-id"
+              name="id"
+              onChange={[Function]}
+              placeholder="The ID of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text=""
+  />
+</div>
+`;
+
+exports[`Create post renders correctly when preview is closed 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-id"
+              name="id"
+              onChange={[Function]}
+              placeholder="The ID of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text=""
+  />
+</div>
+`;
+
+exports[`Create post renders correctly when preview is open 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-id"
+              name="id"
+              onChange={[Function]}
+              placeholder="The ID of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={true}
+    onClose={[Function]}
+    text=""
+  />
+</div>
+`;
+
+exports[`Create post renders correctly when submit has unexpected failure 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={
+      Array [
+        "An unexpected error occurred",
+      ]
+    }
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-id"
+              name="id"
+              onChange={[Function]}
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body"
+  />
+</div>
+`;
+
+exports[`Create post renders correctly when submit has validation errors 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={
+      Array [
+        "err",
+      ]
+    }
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-id"
+              name="id"
+              onChange={[Function]}
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body"
+  />
+</div>
+`;
+
+exports[`Create post renders correctly when submit is successful 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={
+      Array [
+        "The post was created successfully!",
+      ]
+    }
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-id"
+              name="id"
+              onChange={[Function]}
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body"
+  />
+</div>
+`;
+
+exports[`Edit post renders correctly initially 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              disabled={true}
+              id="post-id"
+              name="id"
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body"
+  />
+</div>
+`;
+
+exports[`Edit post renders correctly when preview is closed 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              disabled={true}
+              id="post-id"
+              name="id"
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body"
+  />
+</div>
+`;
+
+exports[`Edit post renders correctly when preview is open 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              disabled={true}
+              id="post-id"
+              name="id"
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={true}
+    onClose={[Function]}
+    text="post body"
+  />
+</div>
+`;
+
+exports[`Edit post renders correctly when submit has unexpected failure 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={
+      Array [
+        "An unexpected error occurred",
+      ]
+    }
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              disabled={true}
+              id="post-id"
+              name="id"
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body 2"
+  />
+</div>
+`;
+
+exports[`Edit post renders correctly when submit has validation errors 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={
+      Array [
+        "err",
+      ]
+    }
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              disabled={true}
+              id="post-id"
+              name="id"
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body 2"
+  />
+</div>
+`;
+
+exports[`Edit post renders correctly when submit is successful 1`] = `
+<div>
+  <MessageBox
+    isForErrors={false}
+    messages={
+      Array [
+        "The post was updated successfully!",
+      ]
+    }
+  />
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <form
+    className="small-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-id"
+        >
+          ID
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              disabled={true}
+              id="post-id"
+              name="id"
+              placeholder="The ID of the post."
+              type="text"
+              value="post id"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-title"
+        >
+          Title
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="The title of the post."
+              type="text"
+              value="post title 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-description"
+        >
+          Description
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-description"
+              name="description"
+              onChange={[Function]}
+              placeholder="The description of the post."
+              rows="5"
+              value="post description 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-body"
+        >
+          Body
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <p
+            className="help"
+          >
+            Use markdown
+          </p>
+          <button
+            className="button is-link preview-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <i
+              className="fas fa-external-link-alt"
+            />
+              Preview
+          </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              id="post-body"
+              name="body"
+              onChange={[Function]}
+              placeholder="The body of the post."
+              rows="15"
+              value="post body 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <p
+            className="control"
+          >
+            <LoadingButton
+              className="button is-link"
+              isLoading={false}
+              type="submit"
+            >
+              <i
+                className="fas fa-save"
+              />
+                Submit
+            </LoadingButton>
+          </p>
+          <p
+            className="control"
+          >
+            <a
+              className="button is-light"
+              href="/"
+            >
+              <i
+                className="fas fa-arrow-left"
+              />
+                Cancel
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+  <MarkdownModal
+    isActive={false}
+    onClose={[Function]}
+    text="post body 2"
+  />
+</div>
+`;
+
+exports[`PostLoader renders correctly when an unexpected error occurred 1`] = `
+<p
+  className="has-text-centered"
+>
+  An error occurred. Please try again later.
+</p>
+`;
+
+exports[`PostLoader renders correctly when it's loading 1`] = `
+<p
+  className="has-text-centered"
+>
+  <i
+    className="fas fa-circle-notch fa-spin fa-9x"
+  />
+</p>
+`;
+
+exports[`PostLoader renders correctly when the post is loaded successfully 1`] = `
+<p>
+  Test Title
+</p>
+`;
+
+exports[`PostLoader renders correctly when the post is not found 1`] = `
+<p
+  className="has-text-centered"
+>
+  The blog post you requested was not found.
+</p>
+`;
