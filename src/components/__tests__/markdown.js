@@ -5,14 +5,13 @@ import Markdown from "../markdown"
 
 describe("Markdown", () => {
     it("renders correctly", () => {
-        const text = `
-            ### Header
+        const text =
+            "### Header\n\n" +
+            "* List\n" +
+            " * Top 1\n" +
+            " * Top 2\n" +
+            " * Top 3\n"
 
-            * List
-              * Top 1
-              * Top 2
-              * Top 3
-        `
         const markdown = renderer
             .create(<Markdown text={text}></Markdown>)
             .toJSON()

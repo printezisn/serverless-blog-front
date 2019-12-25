@@ -16,6 +16,7 @@ export default class Markdown extends React.Component {
     render() {
         const text = marked(this.props.text, {
             renderer: Markdown.renderer,
+            breaks: true,
         })
 
         return (

@@ -5,12 +5,15 @@ exports[`Markdown renders correctly 1`] = `
   className="markdown"
   dangerouslySetInnerHTML={
     Object {
-      "__html": "<pre><code>        ### Header
-
-        * List
-          * Top 1
-          * Top 2
-          * Top 3</code></pre>",
+      "__html": "<h3 class=\\"title is-3\\">Header</h3><ul>
+<li>List<ul>
+<li>Top 1</li>
+<li>Top 2</li>
+<li>Top 3</li>
+</ul>
+</li>
+</ul>
+",
     }
   }
 />

@@ -169,7 +169,7 @@ export class EditPost extends React.Component {
                     messages={this.state.successMessages}
                 />
                 <MessageBox isForErrors={true} messages={this.state.errors} />
-                <form className="small-form" onSubmit={this.submit}>
+                <form onSubmit={this.submit}>
                     <div className="field is-horizontal">
                         <div className="field-label is-normal required-label">
                             <label className="label" htmlFor="post-id">
