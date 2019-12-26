@@ -13,7 +13,7 @@ exports[`Blog post page renders correctly 1`] = `
       </h2>
     </header>
     <section
-      className="blog-post"
+      className="markdown"
     >
       <Markdown
         text="test-body"

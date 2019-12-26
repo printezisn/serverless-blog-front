@@ -9,7 +9,10 @@ html {
     background-color: $banner-color;
     padding: 30px 10px;
 
-    .title {
+    .title,
+    .title a,
+    .title a:focus,
+    .title:hover {
         color: $grey-lightest;
     }
 
@@ -54,6 +57,10 @@ h2 {
     ol {
         padding-left: 10px;
         margin-left: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
     }
 }
 

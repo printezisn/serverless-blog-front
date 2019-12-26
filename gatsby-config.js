@@ -10,7 +10,7 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-create-client-paths`,
-            options: { prefixes: [`/post/edit/*`] },
+            options: { prefixes: [`/post/edit/*`, `/post/delete/*`] },
         },
     ],
 }

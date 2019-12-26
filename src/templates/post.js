@@ -20,7 +20,7 @@ export default class Post extends React.Component {
                     <header>
                         <h2 className="title is-3">{post.title}</h2>
                     </header>
-                    <section className="blog-post">
+                    <section className="markdown">
                         <Markdown text={post.body}></Markdown>
                     </section>
                 </article>

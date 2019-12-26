@@ -31,6 +31,15 @@ class PostAPI {
 
         return response.json()
     }
+
+    async deletePost(id) {
+        const response = await fetch(this.root + id, {
+            method: "DELETE",
+            mode: "cors",
+        })
+
+        return response.json()
+    }
 }
 
 export const postAPI = new PostAPI()
