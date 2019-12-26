@@ -1,6 +1,7 @@
 jest.mock("../postLoader", () => {
     return {
         loadPosts: jest.fn(),
+        getSiteUrl: jest.fn(),
     }
 })
 
@@ -22,6 +23,7 @@ describe("createPages", () => {
             }
         }
 
+        postLoader.getSiteUrl.mockReturnValue("site_url")
         postLoader.loadPosts
             .mockReturnValueOnce({
                 entity: { posts: pages[0], cursor: "test-id9" },
@@ -74,7 +76,7 @@ describe("createPages", () => {
                 expect(createPage).toHaveBeenCalledWith({
                     path: `/post/read/${post.id}`,
                     component: require.resolve("../../src/templates/post.js"),
-                    context: { post, pagePath },
+                    context: { post, pagePath, siteUrl: "site_url" },
                 })
             })
         })

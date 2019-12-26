@@ -37,7 +37,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
                 context: {
                     post,
                     pagePath,
-                    siteUrl: process.env.GATSBY_EDNABLOG_SITE_ROOT_URL,
+                    siteUrl: postLoader.getSiteUrl(),
                 },
             })
         })

@@ -10,6 +10,10 @@ class PostLoader {
 
         return await response.json()
     }
+
+    getSiteUrl() {
+        return process.env.GATSBY_EDNABLOG_SITE_ROOT_URL
+    }
 }
 
 module.exports = new PostLoader()
