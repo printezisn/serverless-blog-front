@@ -8,16 +8,19 @@ import Markdown from "../components/markdown"
 export default ({ pageContext: { post, siteUrl, pagePath } }) => (
     <Layout compact={true}>
         <Helmet>
-            <html lang="en" />
+            <html lang="en" prefix="og: http://ogp.me/ns#" />
             <title>{post.title} | Edna Blog</title>
             <meta charset="utf-8" />
             <meta name="description" content={post.description} />
-            <meta name="og:locale" content="en_US" />
-            <meta name="og:type" content="website" />
-            <meta name="og:title" content={post.title + " | Edna Blog"} />
-            <meta name="og:description" content={post.description} />
-            <meta name="og:url" content={siteUrl + "post/read/" + post.id} />
-            <meta name="og:site_name" content="Edna Blog" />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={post.title + " | Edna Blog"} />
+            <meta property="og:description" content={post.description} />
+            <meta
+                property="og:url"
+                content={siteUrl + "post/read/" + post.id}
+            />
+            <meta property="og:site_name" content="Edna Blog" />
         </Helmet>
         <article>
             <header>
