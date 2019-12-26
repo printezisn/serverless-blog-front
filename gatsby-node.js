@@ -1,18 +1,28 @@
-const fetch = require("node-fetch")
+const postLoader = require("./app/postLoader")
 
 exports.createPages = async ({ actions: { createPage } }) => {
     const pages = await loadAllPostPages()
+    if (pages.length === 0) {
+        createPage({
+            path: "/",
+            component: require.resolve("./src/templates/postPage.js"),
+            context: { prevPagePath: "", nextPagePath: "", page: [] },
+        })
+
+        return
+    }
+
     pages.forEach((page, index) => {
         let prevPagePath = ""
         if (index === 1) {
             prevPagePath = "/"
         } else if (index > 0) {
-            prevPagePath = `/post/page/${index - 1}`
+            prevPagePath = `/post/page/${index}`
         }
 
         const nextPagePath =
-            index === pages.length - 1 ? "" : `/post/page/${index + 1}`
-        const pagePath = index === 0 ? "/" : `/post/page/${index}`
+            index === pages.length - 1 ? "" : `/post/page/${index + 2}`
+        const pagePath = index === 0 ? "/" : `/post/page/${index + 1}`
 
         createPage({
             path: pagePath,
@@ -31,17 +41,12 @@ exports.createPages = async ({ actions: { createPage } }) => {
 }
 
 async function loadAllPostPages() {
-    const rootUrl = process.env.GATSBY_EDNABLOG_ROOT_URL
     let lastID = ""
     let posts = []
 
     // Load all posts from the API
     while (true) {
-        const response = await fetch(`${rootUrl}?lastID=${lastID}`, {
-            method: "GET",
-            mode: "cors",
-        })
-        const result = await response.json()
+        const result = await postLoader.loadPosts(lastID)
 
         if (result.entity.posts.length === 0) {
             break
