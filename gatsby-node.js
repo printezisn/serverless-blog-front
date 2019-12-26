@@ -34,7 +34,11 @@ exports.createPages = async ({ actions: { createPage } }) => {
             createPage({
                 path: `/post/read/${post.id}`,
                 component: require.resolve("./src/templates/post.js"),
-                context: { post },
+                context: {
+                    post,
+                    pagePath,
+                    siteUrl: process.env.GATSBY_EDNABLOG_SITE_ROOT_URL,
+                },
             })
         })
     })

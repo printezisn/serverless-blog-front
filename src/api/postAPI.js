@@ -1,6 +1,6 @@
 class PostAPI {
     constructor() {
-        this.root = process.env.GATSBY_EDNABLOG_ROOT_URL
+        this.root = process.env.GATSBY_EDNABLOG_API_ROOT_URL
     }
 
     async createPost(post) {

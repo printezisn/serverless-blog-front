@@ -14,7 +14,7 @@ describe("Blog post page", () => {
             description: "test-description",
             body: "test-body",
         }
-        const pageContext = { post }
+        const pageContext = { post, pagePath: "/" }
         const template = renderer.create(<Post pageContext={pageContext} />)
 
         expect(template.toJSON()).toMatchSnapshot()

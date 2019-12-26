@@ -67,12 +67,14 @@ describe("createPages", () => {
                 page: pages[2],
             },
         })
-        pages.forEach(page => {
+        pages.forEach((page, index) => {
+            const pagePath = index === 0 ? "/" : `/post/page/${index + 1}`
+
             page.forEach(post => {
                 expect(createPage).toHaveBeenCalledWith({
                     path: `/post/read/${post.id}`,
                     component: require.resolve("../../src/templates/post.js"),
-                    context: { post },
+                    context: { post, pagePath },
                 })
             })
         })

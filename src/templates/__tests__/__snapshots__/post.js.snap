@@ -19,6 +19,18 @@ exports[`Blog post page renders correctly 1`] = `
         text="test-body"
       />
     </section>
+    <br />
+    <footer>
+      <a
+        className="button"
+        href="/"
+      >
+        <i
+          className="fas fa-arrow-left"
+        />
+          Back
+      </a>
+    </footer>
   </article>
 </Layout>
 `;
