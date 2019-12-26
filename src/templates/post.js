@@ -20,6 +20,7 @@ export default ({ pageContext: { post, siteUrl, pagePath } }) => (
                 property="og:url"
                 content={siteUrl + "post/read/" + post.id}
             />
+            <meta property="og:image" content={siteUrl + "preview.jpg"} />
             <meta property="og:site_name" content="Edna Blog" />
         </Helmet>
         <article>
