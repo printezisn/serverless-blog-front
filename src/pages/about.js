@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 
 export default () => (
-    <Layout>
+    <Layout compact={true}>
         <Helmet>
             <html lang="en" />
             <title>About | Edna Blog</title>

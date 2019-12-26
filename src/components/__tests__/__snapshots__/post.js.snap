@@ -198,7 +198,7 @@ exports[`Create post renders correctly initially 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -417,7 +417,7 @@ exports[`Create post renders correctly when preview is closed 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -636,7 +636,7 @@ exports[`Create post renders correctly when preview is open 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -859,7 +859,7 @@ exports[`Create post renders correctly when submit has unexpected failure 1`] = 
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -1082,7 +1082,7 @@ exports[`Create post renders correctly when submit has validation errors 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -1305,7 +1305,7 @@ exports[`Create post renders correctly when submit is successful 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -1524,7 +1524,7 @@ exports[`Edit post renders correctly initially 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -1743,7 +1743,7 @@ exports[`Edit post renders correctly when preview is closed 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -1962,7 +1962,7 @@ exports[`Edit post renders correctly when preview is open 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -2185,7 +2185,7 @@ exports[`Edit post renders correctly when submit has unexpected failure 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -2408,7 +2408,7 @@ exports[`Edit post renders correctly when submit has validation errors 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i
@@ -2631,7 +2631,7 @@ exports[`Edit post renders correctly when submit is successful 1`] = `
             className="control"
           >
             <a
-              className="button is-light"
+              className="button"
               href="/"
             >
               <i

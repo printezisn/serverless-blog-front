@@ -9,7 +9,7 @@ export default class Post extends React.Component {
         const post = this.props.pageContext.post
 
         return (
-            <Layout>
+            <Layout compact={true}>
                 <Helmet>
                     <html lang="en" />
                     <title>{post.title} | Edna Blog</title>
@@ -18,9 +18,7 @@ export default class Post extends React.Component {
                 </Helmet>
                 <article>
                     <header>
-                        <h2 className="title is-4 has-text-centered">
-                            {post.title}
-                        </h2>
+                        <h2 className="title is-3">{post.title}</h2>
                     </header>
                     <section className="blog-post">
                         <Markdown text={post.body}></Markdown>

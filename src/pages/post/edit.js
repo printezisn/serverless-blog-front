@@ -34,6 +34,9 @@ class InternalEdit extends React.Component {
                         content="Edit a blog post in Edna Blog."
                     />
                 </Helmet>
+                <header>
+                    <h2 className="title is-3 has-text-centered">Edit Post</h2>
+                </header>
                 <PostLoader
                     id={this.props.id}
                     onRender={this.renderEditPost}

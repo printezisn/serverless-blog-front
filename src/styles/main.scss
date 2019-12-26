@@ -1,7 +1,37 @@
+@import "_variables.scss";
 @import "~bulma/bulma.sass";
 
+html {
+    background-color: $grey-lightest;
+}
+
+.banner {
+    background-color: $banner-color;
+    padding: 30px 10px;
+
+    .title {
+        color: $grey-lightest;
+    }
+
+    .subtitle {
+        color: $grey-light;
+    }
+}
+
+.title,
+.subtitle {
+    font-family: $title-font-family;
+}
+
 main {
-    padding: 100px 0 20px 0;
+    padding: 20px 0;
+}
+
+.container {
+    &.is-compact {
+        max-width: 700px;
+        margin: auto;
+    }
 }
 
 .required-label label::after {
@@ -25,4 +55,8 @@ h2 {
         padding-left: 10px;
         margin-left: 10px;
     }
+}
+
+.clearfix {
+    clear: both;
 }

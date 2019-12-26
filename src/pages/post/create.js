@@ -17,7 +17,7 @@ export default () => (
         </Helmet>
         <article>
             <header>
-                <h2 className="title is-4 has-text-centered">New Post</h2>
+                <h2 className="title is-3 has-text-centered">New Post</h2>
             </header>
             <EditPost />
         </article>

@@ -272,7 +272,7 @@ export class EditPost extends React.Component {
                                     </LoadingButton>
                                 </p>
                                 <p className="control">
-                                    <Link className="button is-light" to="/">
+                                    <Link className="button" to="/">
                                         <i className="fas fa-arrow-left"></i>
                                         &nbsp; Cancel
                                     </Link>

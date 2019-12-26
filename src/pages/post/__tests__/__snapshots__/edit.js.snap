@@ -3,6 +3,13 @@
 exports[`Edit page renders correctly 1`] = `
 <Router>
   <Layout>
+    <header>
+      <h2
+        className="title is-3 has-text-centered"
+      >
+        Edit Post
+      </h2>
+    </header>
     <PostLoader
       onRender={[Function]}
     />
