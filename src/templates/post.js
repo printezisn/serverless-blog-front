@@ -18,9 +18,12 @@ export default ({ pageContext: { post, siteUrl, pagePath } }) => (
             <meta property="og:description" content={post.description} />
             <meta
                 property="og:url"
-                content={siteUrl + "post/read/" + post.id}
+                content={siteUrl + "post/read/" + post.id + "/"}
             />
             <meta property="og:image" content={siteUrl + "preview.jpg"} />
+            <meta property="og:image:type" content="image/jpeg" />
+            <meta property="og:image:width" content="400" />
+            <meta property="og:image:height" content="400" />
             <meta property="og:site_name" content="Edna Blog" />
         </Helmet>
         <article>
