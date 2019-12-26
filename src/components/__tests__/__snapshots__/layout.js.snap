@@ -12,3 +12,16 @@ exports[`Layout renders correctly 1`] = `
   </main>
 </div>
 `;
+
+exports[`Layout renders correctly when it's compact 1`] = `
+<div>
+  <Header />
+  <main
+    className="container is-fluid is-compact"
+  >
+    <span>
+      Child
+    </span>
+  </main>
+</div>
+`;

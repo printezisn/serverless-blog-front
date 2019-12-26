@@ -10,7 +10,7 @@ describe("MarkdownModal", () => {
         const modal = renderer
             .create(
                 <MarkdownModal
-                    isActive="false"
+                    isActive={false}
                     text="Test inactive text."
                     onClose={() => {}}
                 />
@@ -23,7 +23,7 @@ describe("MarkdownModal", () => {
         const modal = renderer
             .create(
                 <MarkdownModal
-                    isActive="true"
+                    isActive={true}
                     text="Test active text."
                     onClose={() => {}}
                 />
@@ -37,7 +37,7 @@ describe("MarkdownModal", () => {
 
         const modal = renderer.create(
             <MarkdownModal
-                isActive="true"
+                isActive={true}
                 text="Test active text."
                 onClose={() => totalInvokes++}
             />

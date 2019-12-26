@@ -31,4 +31,82 @@ describe("Blog post page", () => {
 
         expect(postPage.toJSON()).toMatchSnapshot()
     })
+
+    it("renders correctly when next page is not provided", () => {
+        const prevPagePath = "/prevPage"
+        const nextPagePath = ""
+        const page = [
+            {
+                id: "test-id1",
+                title: "test-title1",
+                description: "test-description1",
+            },
+            {
+                id: "test-id2",
+                title: "test-title2",
+                description: "test-description2",
+            },
+            {
+                id: "test-id3",
+                title: "test-title3",
+                description: "test-description3",
+            },
+        ]
+        const pageContext = { prevPagePath, nextPagePath, page }
+        const postPage = renderer.create(<PostPage pageContext={pageContext} />)
+
+        expect(postPage.toJSON()).toMatchSnapshot()
+    })
+
+    it("renders correctly when previous page is not provided", () => {
+        const prevPagePath = ""
+        const nextPagePath = "/nextPage"
+        const page = [
+            {
+                id: "test-id1",
+                title: "test-title1",
+                description: "test-description1",
+            },
+            {
+                id: "test-id2",
+                title: "test-title2",
+                description: "test-description2",
+            },
+            {
+                id: "test-id3",
+                title: "test-title3",
+                description: "test-description3",
+            },
+        ]
+        const pageContext = { prevPagePath, nextPagePath, page }
+        const postPage = renderer.create(<PostPage pageContext={pageContext} />)
+
+        expect(postPage.toJSON()).toMatchSnapshot()
+    })
+
+    it("renders correctly when no next or previous page is provided", () => {
+        const prevPagePath = ""
+        const nextPagePath = ""
+        const page = [
+            {
+                id: "test-id1",
+                title: "test-title1",
+                description: "test-description1",
+            },
+            {
+                id: "test-id2",
+                title: "test-title2",
+                description: "test-description2",
+            },
+            {
+                id: "test-id3",
+                title: "test-title3",
+                description: "test-description3",
+            },
+        ]
+        const pageContext = { prevPagePath, nextPagePath, page }
+        const postPage = renderer.create(<PostPage pageContext={pageContext} />)
+
+        expect(postPage.toJSON()).toMatchSnapshot()
+    })
 })

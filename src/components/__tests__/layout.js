@@ -16,4 +16,15 @@ describe("Layout", () => {
             .toJSON()
         expect(layout).toMatchSnapshot()
     })
+
+    it("renders correctly when it's compact", () => {
+        const layout = renderer
+            .create(
+                <Layout compact={true}>
+                    <span>Child</span>
+                </Layout>
+            )
+            .toJSON()
+        expect(layout).toMatchSnapshot()
+    })
 })

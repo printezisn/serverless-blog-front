@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Delete page renders correctly 1`] = `
+<Router>
+  <Layout
+    compact={true}
+  >
+    <PostLoader
+      onRender={[Function]}
+    />
+  </Layout>
+</Router>
+`;
+
+exports[`Delete page renders correctly when an unexpected error occurs 1`] = `
+<article>
+  <header>
+    <h2
+      className="title is-3"
+    >
+      test-title
+    </h2>
+  </header>
+  <MessageBox
+    isForErrors={true}
+    messages={
+      Array [
+        "An error occurred. Please try again later.",
+      ]
+    }
+  />
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <section
+    className="markdown"
+  >
+    <Markdown
+      text="test-body"
+    />
+  </section>
+  <br />
+  <footer>
+    <LoadingButton
+      className="button is-danger"
+      isLoading={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="fas fa-trash-alt"
+      />
+        Delete
+    </LoadingButton>
+  </footer>
+</article>
+`;
+
+exports[`Delete page renders correctly when the post is deleted successfully 1`] = `
+<article>
+  <header>
+    <h2
+      className="title is-3"
+    >
+      test-title
+    </h2>
+  </header>
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={false}
+    messages={
+      Array [
+        "The post was deleted successfully!",
+      ]
+    }
+  />
+  <section
+    className="markdown"
+  >
+    <Markdown
+      text="test-body"
+    />
+  </section>
+  <br />
+  <footer>
+    <LoadingButton
+      className="button is-danger"
+      isLoading={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="fas fa-trash-alt"
+      />
+        Delete
+    </LoadingButton>
+  </footer>
+</article>
+`;
+
+exports[`Delete page renders correctly when the post is loaded 1`] = `
+<article>
+  <header>
+    <h2
+      className="title is-3"
+    >
+      test-title
+    </h2>
+  </header>
+  <MessageBox
+    isForErrors={true}
+    messages={Array []}
+  />
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <section
+    className="markdown"
+  >
+    <Markdown
+      text="test-body"
+    />
+  </section>
+  <br />
+  <footer>
+    <LoadingButton
+      className="button is-danger"
+      isLoading={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="fas fa-trash-alt"
+      />
+        Delete
+    </LoadingButton>
+  </footer>
+</article>
+`;
+
+exports[`Delete page renders correctly when the post is not found 1`] = `
+<article>
+  <header>
+    <h2
+      className="title is-3"
+    >
+      test-title
+    </h2>
+  </header>
+  <MessageBox
+    isForErrors={true}
+    messages={
+      Array [
+        "The blog post you requested was not found.",
+      ]
+    }
+  />
+  <MessageBox
+    isForErrors={false}
+    messages={Array []}
+  />
+  <section
+    className="markdown"
+  >
+    <Markdown
+      text="test-body"
+    />
+  </section>
+  <br />
+  <footer>
+    <LoadingButton
+      className="button is-danger"
+      isLoading={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="fas fa-trash-alt"
+      />
+        Delete
+    </LoadingButton>
+  </footer>
+</article>
+`;

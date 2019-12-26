@@ -50,7 +50,7 @@ exports[`MarkdownModal renders correctly when it's active 1`] = `
 
 exports[`MarkdownModal renders correctly when it's not active 1`] = `
 <div
-  className="modal is-active"
+  className="modal"
 >
   <div
     className="modal-background"

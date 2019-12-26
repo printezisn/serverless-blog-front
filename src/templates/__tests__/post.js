@@ -1,10 +1,10 @@
 import React from "react"
 import renderer from "react-test-renderer"
 
-import Post from "../post"
-
 jest.mock("../../components/layout", () => "Layout")
 jest.mock("../../components/markdown", () => "Markdown")
+
+import Post from "../post"
 
 describe("Blog post page", () => {
     it("renders correctly", () => {
