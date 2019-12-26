@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog post page renders correctly 1`] = `
+<Layout
+  compact={true}
+>
+  <div
+    className="box"
+  >
+    <article>
+      <header>
+        <h2
+          className="title is-4"
+        >
+          test-title1
+        </h2>
+      </header>
+      <section>
+        <p>
+          test-description1
+        </p>
+      </section>
+      <br />
+      <footer>
+        <a
+          className="button"
+          href="/post/read/test-id1"
+        >
+          Read More  
+          <i
+            className="fas fa-arrow-right"
+          />
+        </a>
+      </footer>
+    </article>
+  </div>
+  <div
+    className="box"
+  >
+    <article>
+      <header>
+        <h2
+          className="title is-4"
+        >
+          test-title2
+        </h2>
+      </header>
+      <section>
+        <p>
+          test-description2
+        </p>
+      </section>
+      <br />
+      <footer>
+        <a
+          className="button"
+          href="/post/read/test-id2"
+        >
+          Read More  
+          <i
+            className="fas fa-arrow-right"
+          />
+        </a>
+      </footer>
+    </article>
+  </div>
+  <div
+    className="box"
+  >
+    <article>
+      <header>
+        <h2
+          className="title is-4"
+        >
+          test-title3
+        </h2>
+      </header>
+      <section>
+        <p>
+          test-description3
+        </p>
+      </section>
+      <br />
+      <footer>
+        <a
+          className="button"
+          href="/post/read/test-id3"
+        >
+          Read More  
+          <i
+            className="fas fa-arrow-right"
+          />
+        </a>
+      </footer>
+    </article>
+  </div>
+  <div
+    className="clearfix"
+  >
+    <a
+      className="button is-pulled-left"
+      href="/prevPage"
+    >
+      <i
+        className="fas fa-arrow-left"
+      />
+        Newer Posts
+    </a>
+    <a
+      className="button is-pulled-right"
+      href="/nextPage"
+    >
+      Older Posts   
+      <i
+        className="fas fa-arrow-right"
+      />
+    </a>
+  </div>
+  <div
+    className="clearfix"
+  />
+</Layout>
+`;
