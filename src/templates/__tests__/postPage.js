@@ -7,6 +7,7 @@ jest.mock("../../components/layout", () => "Layout")
 
 describe("Blog post page", () => {
     it("renders correctly", () => {
+        const siteUrl = "site_url"
         const prevPagePath = "/prevPage"
         const nextPagePath = "/nextPage"
         const page = [
@@ -26,13 +27,14 @@ describe("Blog post page", () => {
                 description: "test-description3",
             },
         ]
-        const pageContext = { prevPagePath, nextPagePath, page }
+        const pageContext = { prevPagePath, nextPagePath, page, siteUrl }
         const postPage = renderer.create(<PostPage pageContext={pageContext} />)
 
         expect(postPage.toJSON()).toMatchSnapshot()
     })
 
     it("renders correctly when next page is not provided", () => {
+        const siteUrl = "site_url"
         const prevPagePath = "/prevPage"
         const nextPagePath = ""
         const page = [
@@ -52,13 +54,14 @@ describe("Blog post page", () => {
                 description: "test-description3",
             },
         ]
-        const pageContext = { prevPagePath, nextPagePath, page }
+        const pageContext = { prevPagePath, nextPagePath, page, siteUrl }
         const postPage = renderer.create(<PostPage pageContext={pageContext} />)
 
         expect(postPage.toJSON()).toMatchSnapshot()
     })
 
     it("renders correctly when previous page is not provided", () => {
+        const siteUrl = "site_url"
         const prevPagePath = ""
         const nextPagePath = "/nextPage"
         const page = [
@@ -78,13 +81,14 @@ describe("Blog post page", () => {
                 description: "test-description3",
             },
         ]
-        const pageContext = { prevPagePath, nextPagePath, page }
+        const pageContext = { prevPagePath, nextPagePath, page, siteUrl }
         const postPage = renderer.create(<PostPage pageContext={pageContext} />)
 
         expect(postPage.toJSON()).toMatchSnapshot()
     })
 
     it("renders correctly when no next or previous page is provided", () => {
+        const siteUrl = "site_url"
         const prevPagePath = ""
         const nextPagePath = ""
         const page = [
@@ -104,7 +108,7 @@ describe("Blog post page", () => {
                 description: "test-description3",
             },
         ]
-        const pageContext = { prevPagePath, nextPagePath, page }
+        const pageContext = { prevPagePath, nextPagePath, page, siteUrl }
         const postPage = renderer.create(<PostPage pageContext={pageContext} />)
 
         expect(postPage.toJSON()).toMatchSnapshot()

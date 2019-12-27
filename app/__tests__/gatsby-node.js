@@ -49,6 +49,7 @@ describe("createPages", () => {
                 prevPagePath: "",
                 nextPagePath: "/post/page/2",
                 page: pages[0],
+                siteUrl: "site_url",
             },
         })
         expect(createPage).toHaveBeenCalledWith({
@@ -58,6 +59,7 @@ describe("createPages", () => {
                 prevPagePath: "/",
                 nextPagePath: "/post/page/3",
                 page: pages[1],
+                siteUrl: "site_url",
             },
         })
         expect(createPage).toHaveBeenCalledWith({
@@ -67,6 +69,7 @@ describe("createPages", () => {
                 prevPagePath: "/post/page/2",
                 nextPagePath: "",
                 page: pages[2],
+                siteUrl: "site_url",
             },
         })
         pages.forEach((page, index) => {
@@ -89,6 +92,8 @@ describe("createPages", () => {
             entity: { posts: [], cursor: "" },
         })
 
+        postLoader.getSiteUrl.mockReturnValue("site_url")
+
         await createPages({ actions: { createPage } })
 
         expect(createPage).toHaveBeenCalledWith({
@@ -98,6 +103,7 @@ describe("createPages", () => {
                 prevPagePath: "",
                 nextPagePath: "",
                 page: [],
+                siteUrl: "site_url",
             },
         })
     })

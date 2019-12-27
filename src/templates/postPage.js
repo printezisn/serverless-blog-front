@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 
 export default class PostPage extends React.Component {
     render() {
+        const siteUrl = this.props.pageContext.siteUrl
         const posts = this.props.pageContext.page.map(post => (
             <div className="box" key={post.id}>
                 <article>
@@ -50,13 +51,27 @@ export default class PostPage extends React.Component {
         return (
             <Layout compact={true}>
                 <Helmet>
-                    <html lang="en" />
+                    <html lang="en" prefix="og: http://ogp.me/ns#" />
                     <title>Edna Blog</title>
                     <meta charset="utf-8" />
                     <meta
                         name="description"
                         content="The personal serverless blog of Nikos Printezis."
                     />
+                    <meta name="author" content="Nikos Printezis" />
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content="Edna Blog" />
+                    <meta
+                        property="og:description"
+                        content="The personal serverless blog of Nikos Printezis."
+                    />
+                    <meta property="og:url" content={siteUrl} />
+                    <meta property="og:image" content={siteUrl + "site.jpg"} />
+                    <meta property="og:image:type" content="image/jpeg" />
+                    <meta property="og:image:width" content="400" />
+                    <meta property="og:image:height" content="400" />
+                    <meta property="og:site_name" content="Edna Blog" />
                 </Helmet>
                 {posts}
                 <div className="clearfix">

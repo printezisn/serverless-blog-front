@@ -6,7 +6,12 @@ exports.createPages = async ({ actions: { createPage } }) => {
         createPage({
             path: "/",
             component: require.resolve("./src/templates/postPage.js"),
-            context: { prevPagePath: "", nextPagePath: "", page: [] },
+            context: {
+                prevPagePath: "",
+                nextPagePath: "",
+                page: [],
+                siteUrl: postLoader.getSiteUrl(),
+            },
         })
 
         return
@@ -27,7 +32,12 @@ exports.createPages = async ({ actions: { createPage } }) => {
         createPage({
             path: pagePath,
             component: require.resolve("./src/templates/postPage.js"),
-            context: { prevPagePath, nextPagePath, page },
+            context: {
+                prevPagePath,
+                nextPagePath,
+                page,
+                siteUrl: postLoader.getSiteUrl(),
+            },
         })
 
         page.forEach(post => {

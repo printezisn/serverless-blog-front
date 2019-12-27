@@ -12,6 +12,7 @@ export default ({ pageContext: { post, siteUrl, pagePath } }) => (
             <title>{post.title} | Edna Blog</title>
             <meta charset="utf-8" />
             <meta name="description" content={post.description} />
+            <meta name="author" content="Nikos Printezis" />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={post.title + " | Edna Blog"} />
