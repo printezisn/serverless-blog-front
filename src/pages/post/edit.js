@@ -1,14 +1,23 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Router } from "@reach/router"
+import { Location } from "@reach/router"
+import queryString from "query-string"
 
 import Layout from "../../components/layout"
 import { PostLoader, EditPost } from "../../components/post"
 
 export default () => (
-    <Router>
-        <InternalEdit path="/post/edit/:id"></InternalEdit>
-    </Router>
+    <Location>
+        {({ location }) => {
+            console.log(location)
+            if (!location.search) {
+                return ""
+            }
+
+            const { id } = queryString.parse(location.search)
+            return <InternalEdit id={id}></InternalEdit>
+        }}
+    </Location>
 )
 
 class InternalEdit extends React.Component {

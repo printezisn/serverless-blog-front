@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Edit page renders correctly 1`] = `
-<Router>
+<p>
   <Layout>
     <header>
       <h2
@@ -11,10 +11,11 @@ exports[`Edit page renders correctly 1`] = `
       </h2>
     </header>
     <PostLoader
+      id="test-id"
       onRender={[Function]}
     />
   </Layout>
-</Router>
+</p>
 `;
 
 exports[`Edit page renders the edit post form correctly 1`] = `

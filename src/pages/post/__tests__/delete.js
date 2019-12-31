@@ -2,8 +2,12 @@ import React from "react"
 import renderer from "react-test-renderer"
 
 jest.mock("@reach/router", () => {
+    const location = {
+        search: "?id=test-id",
+    }
+
     return {
-        Router: "Router",
+        Location: props => <p>{props.children({ location })}</p>,
     }
 })
 jest.mock("../../../components/layout", () => "Layout")

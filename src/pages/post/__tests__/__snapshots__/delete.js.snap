@@ -1,15 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Delete page renders correctly 1`] = `
-<Router>
+<p>
   <Layout
     compact={true}
   >
     <PostLoader
+      id="test-id"
       onRender={[Function]}
     />
   </Layout>
-</Router>
+</p>
 `;
 
 exports[`Delete page renders correctly when an unexpected error occurs 1`] = `

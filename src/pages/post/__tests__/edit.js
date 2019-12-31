@@ -4,8 +4,12 @@ import renderer from "react-test-renderer"
 import EditPage from "../edit"
 
 jest.mock("@reach/router", () => {
+    const location = {
+        search: "?id=test-id",
+    }
+
     return {
-        Router: "Router",
+        Location: props => <p>{props.children({ location })}</p>,
     }
 })
 jest.mock("../../../components/layout", () => "Layout")

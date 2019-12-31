@@ -24,7 +24,7 @@ class PostAPI {
     }
 
     async getPost(id) {
-        const response = await fetch(this.root + id, {
+        const response = await fetch(this.root + encodeURIComponent(id), {
             method: "GET",
             mode: "cors",
         })
@@ -33,7 +33,7 @@ class PostAPI {
     }
 
     async deletePost(id) {
-        const response = await fetch(this.root + id, {
+        const response = await fetch(this.root + encodeURIComponent(id), {
             method: "DELETE",
             mode: "cors",
         })

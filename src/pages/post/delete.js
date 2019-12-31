@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Router } from "@reach/router"
+import { Location } from "@reach/router"
+import queryString from "query-string"
 
 import Layout from "../../components/layout"
 import { PostLoader } from "../../components/post"
@@ -11,9 +12,16 @@ import LoadingButton from "../../components/loadingButton"
 import { postAPI } from "../../api/postAPI"
 
 export default () => (
-    <Router>
-        <InternalDelete path="/post/delete/:id"></InternalDelete>
-    </Router>
+    <Location>
+        {({ location }) => {
+            if (!location.search) {
+                return ""
+            }
+
+            const { id } = queryString.parse(location.search)
+            return <InternalDelete id={id}></InternalDelete>
+        }}
+    </Location>
 )
 
 class InternalDelete extends React.Component {
