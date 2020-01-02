@@ -1326,6 +1326,14 @@ exports[`Create post renders correctly when submit is successful 1`] = `
 </div>
 `;
 
+exports[`Create post renders correctly when the user is not logged in 1`] = `
+<p
+  className="has-text-centered"
+>
+  You are not authorized to access this page.
+</p>
+`;
+
 exports[`Edit post renders correctly initially 1`] = `
 <div>
   <MessageBox
@@ -2652,6 +2660,14 @@ exports[`Edit post renders correctly when submit is successful 1`] = `
 </div>
 `;
 
+exports[`Edit post renders correctly when the user is not logged in 1`] = `
+<p
+  className="has-text-centered"
+>
+  You are not authorized to access this page.
+</p>
+`;
+
 exports[`PostLoader renders correctly when an unexpected error occurred 1`] = `
 <p
   className="has-text-centered"
@@ -2670,6 +2686,14 @@ exports[`PostLoader renders correctly when it's loading 1`] = `
 </p>
 `;
 
+exports[`PostLoader renders correctly when the post id is not provided 1`] = `
+<p
+  className="has-text-centered"
+>
+  The blog post you requested was not found.
+</p>
+`;
+
 exports[`PostLoader renders correctly when the post is loaded successfully 1`] = `
 <p>
   Test Title
@@ -2681,5 +2705,13 @@ exports[`PostLoader renders correctly when the post is not found 1`] = `
   className="has-text-centered"
 >
   The blog post you requested was not found.
+</p>
+`;
+
+exports[`PostLoader renders correctly when the user is not logged in 1`] = `
+<p
+  className="has-text-centered"
+>
+  You are not authorized to access this page.
 </p>
 `;

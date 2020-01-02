@@ -6,16 +6,28 @@ import MessageBox from "./messageBox"
 import LoadingButton from "./loadingButton"
 
 import { postAPI } from "../api/postAPI"
+import { auth } from "../api/auth"
+import { Events } from "../utils/constants"
+import { eventBus } from "../utils/eventBus"
 
 export class PostLoader extends React.Component {
     state = {
+        isLoggedIn: auth.isLoggedIn(),
         isLoading: true,
         hasErrors: false,
         isNotFound: false,
         post: {},
     }
 
+    constructor(props) {
+        super(props)
+
+        this._authChanged = this._authChanged.bind(this)
+    }
+
     async componentDidMount() {
+        eventBus.register(Events.AUTH_CHANGE, this._authChanged)
+
         const state = {
             isLoading: false,
             hasErrors: false,
@@ -39,7 +51,22 @@ export class PostLoader extends React.Component {
         this.setState(state)
     }
 
+    componentWillUnmount() {
+        eventBus.unregister(Events.AUTH_CHANGE, this._authChanged)
+    }
+
+    _authChanged() {
+        this.setState({ isLoggedIn: auth.isLoggedIn() })
+    }
+
     render() {
+        if (!this.state.isLoggedIn) {
+            return (
+                <p className="has-text-centered">
+                    You are not authorized to access this page.
+                </p>
+            )
+        }
         if (this.state.isLoading) {
             return (
                 <p className="has-text-centered">
@@ -80,12 +107,26 @@ export class EditPost extends React.Component {
             successMessages: [],
             isPreviewOpen: false,
             isLoading: false,
+            isLoggedIn: auth.isLoggedIn(),
         }
 
         this.submit = this.submit.bind(this)
         this.openPreview = this.openPreview.bind(this)
         this.closePreview = this.closePreview.bind(this)
         this.handleInputChange = this.handleInputChange.bind(this)
+        this._authChanged = this._authChanged.bind(this)
+    }
+
+    componentDidMount() {
+        eventBus.register(Events.AUTH_CHANGE, this._authChanged)
+    }
+
+    componentWillUnmount() {
+        eventBus.unregister(Events.AUTH_CHANGE, this._authChanged)
+    }
+
+    _authChanged() {
+        this.setState({ isLoggedIn: auth.isLoggedIn() })
     }
 
     async submit(e) {
@@ -140,6 +181,14 @@ export class EditPost extends React.Component {
     }
 
     render() {
+        if (!this.state.isLoggedIn) {
+            return (
+                <p className="has-text-centered">
+                    You are not authorized to access this page.
+                </p>
+            )
+        }
+
         const idInput = this.props.post ? (
             <input
                 id="post-id"

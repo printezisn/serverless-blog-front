@@ -9,7 +9,6 @@ import { PostLoader, EditPost } from "../../components/post"
 export default () => (
     <Location>
         {({ location }) => {
-            console.log(location)
             if (!location.search) {
                 return ""
             }
@@ -43,13 +42,17 @@ class InternalEdit extends React.Component {
                         content="Edit a blog post in Edna Blog."
                     />
                 </Helmet>
-                <header>
-                    <h2 className="title is-3 has-text-centered">Edit Post</h2>
-                </header>
-                <PostLoader
-                    id={this.props.id}
-                    onRender={this.renderEditPost}
-                ></PostLoader>
+                <article>
+                    <header>
+                        <h2 className="title is-3 has-text-centered">
+                            Edit Post
+                        </h2>
+                    </header>
+                    <PostLoader
+                        id={this.props.id}
+                        onRender={this.renderEditPost}
+                    ></PostLoader>
+                </article>
             </Layout>
         )
     }
