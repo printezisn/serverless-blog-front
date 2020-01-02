@@ -19,16 +19,16 @@ class Auth {
         const auth = new CognitoAuth(authData)
         auth.userhandler = {
             onSuccess: result => {
-                self.accessToken = result.getAccessToken().getJwtToken()
+                self.token = result.getIdToken().getJwtToken()
                 eventBus.emit(Events.AUTH_CHANGE)
             },
             onFailure: () => {},
         }
 
         this.auth = auth
-        this.accessToken = this.auth
+        this.token = this.auth
             .getSignInUserSession()
-            .getAccessToken()
+            .getIdToken()
             .getJwtToken()
     }
 
@@ -44,12 +44,12 @@ class Auth {
         this.auth.parseCognitoWebResponse(url)
     }
 
-    getAccessToken() {
-        return this.accessToken
+    getToken() {
+        return this.token
     }
 
     isLoggedIn() {
-        return this.accessToken !== ""
+        return this.token !== ""
     }
 }
 

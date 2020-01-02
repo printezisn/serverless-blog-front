@@ -1,3 +1,5 @@
+import { auth } from "./auth"
+
 class PostAPI {
     constructor() {
         this.root = process.env.GATSBY_EDNABLOG_API_ROOT_URL
@@ -8,6 +10,9 @@ class PostAPI {
             method: "PUT",
             mode: "cors",
             body: JSON.stringify(post),
+            headers: {
+                Authorization: auth.getToken(),
+            },
         })
 
         return response.json()
@@ -18,6 +23,9 @@ class PostAPI {
             method: "POST",
             mode: "cors",
             body: JSON.stringify(post),
+            headers: {
+                Authorization: auth.getToken(),
+            },
         })
 
         return response.json()
@@ -36,6 +44,9 @@ class PostAPI {
         const response = await fetch(this.root + encodeURIComponent(id), {
             method: "DELETE",
             mode: "cors",
+            headers: {
+                Authorization: auth.getToken(),
+            },
         })
 
         return response.json()
