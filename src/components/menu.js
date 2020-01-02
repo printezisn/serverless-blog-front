@@ -1,15 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import { auth } from "../api/auth"
+import { Events } from "../utils/constants"
+import { eventBus } from "../utils/eventBus"
+
 export default class Menu extends React.Component {
     state = {
         isMenuOpen: false,
+        isLoggedIn: auth.isLoggedIn(),
     }
 
     constructor(props) {
         super(props)
 
+        this._authChanged = this._authChanged.bind(this)
         this._toggleMenu = this._toggleMenu.bind(this)
+        this._logOut = this._logOut.bind(this)
+    }
+
+    componentDidMount() {
+        eventBus.register(Events.AUTH_CHANGE, this._authChanged)
+    }
+
+    componentWillUnmount() {
+        eventBus.unregister(Events.AUTH_CHANGE, this._authChanged)
+    }
+
+    _authChanged() {
+        this.setState({ isLoggedIn: auth.isLoggedIn() })
     }
 
     _toggleMenu() {
@@ -18,7 +37,23 @@ export default class Menu extends React.Component {
         })
     }
 
+    _logOut() {
+        auth.logOut()
+    }
+
     render() {
+        const logOutLink = this.state.isLoggedIn ? (
+            <a
+                href="#"
+                className="navbar-item logout-button"
+                onClick={this._logOut}
+            >
+                Logout
+            </a>
+        ) : (
+            ""
+        )
+
         return (
             <nav
                 className="navbar"
@@ -51,6 +86,7 @@ export default class Menu extends React.Component {
                         <Link className="navbar-item" to="/about">
                             About
                         </Link>
+                        {logOutLink}
                     </div>
                 </div>
             </nav>

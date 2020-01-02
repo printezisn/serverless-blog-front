@@ -45,6 +45,7 @@ exports[`Menu renders correctly when it's active 1`] = `
       >
         About
       </a>
+      
     </div>
   </div>
 </nav>
@@ -94,6 +95,115 @@ exports[`Menu renders correctly when it's not active 1`] = `
         href="/about"
       >
         About
+      </a>
+      
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Menu renders correctly when the user is logged in 1`] = `
+<nav
+  aria-label="main navigation"
+  className="navbar"
+  role="navigation"
+>
+  <div
+    className="navbar-brand"
+  >
+    <a
+      aria-expanded="false"
+      aria-label="menu"
+      className="navbar-burger burger"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+    </a>
+  </div>
+  <div
+    className="navbar-menu is-active"
+  >
+    <div
+      className="navbar-start"
+    >
+      <a
+        className="navbar-item"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        className="navbar-item"
+        href="/about"
+      >
+        About
+      </a>
+      
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Menu renders correctly when the user is logged in 2`] = `
+<nav
+  aria-label="main navigation"
+  className="navbar"
+  role="navigation"
+>
+  <div
+    className="navbar-brand"
+  >
+    <a
+      aria-expanded="false"
+      aria-label="menu"
+      className="navbar-burger burger"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+    </a>
+  </div>
+  <div
+    className="navbar-menu is-active"
+  >
+    <div
+      className="navbar-start"
+    >
+      <a
+        className="navbar-item"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        className="navbar-item"
+        href="/about"
+      >
+        About
+      </a>
+      <a
+        className="navbar-item logout-button"
+        href="#"
+        onClick={[Function]}
+      >
+        Logout
       </a>
     </div>
   </div>

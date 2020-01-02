@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 page renders correctly 1`] = `
+<Layout>
+  <article
+    className="has-text-centered"
+  >
+    <p
+      className="has-text-warning"
+    >
+      <i
+        className="fa fa-9x fa-exclamation has-text-warning"
+      />
+    </p>
+    <header>
+      <h2
+        className="title is-2"
+      >
+        Page Not Found
+      </h2>
+      <p
+        className="subtitle"
+      >
+        The page you requested was not found.
+      </p>
+    </header>
+  </article>
+</Layout>
+`;
