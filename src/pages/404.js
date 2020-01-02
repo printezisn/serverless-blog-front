@@ -20,10 +20,8 @@ export default () => (
             </p>
             <header>
                 <h2 className="title is-2">Page Not Found</h2>
-                <p className="subtitle">
-                    The page you requested was not found.
-                </p>
             </header>
+            <p>The page you requested was not found.</p>
         </article>
     </Layout>
 )

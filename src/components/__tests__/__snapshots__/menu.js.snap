@@ -41,7 +41,7 @@ exports[`Menu renders correctly when it's active 1`] = `
       </a>
       <a
         className="navbar-item"
-        href="/about"
+        href="/post/read/about"
       >
         About
       </a>
@@ -92,7 +92,7 @@ exports[`Menu renders correctly when it's not active 1`] = `
       </a>
       <a
         className="navbar-item"
-        href="/about"
+        href="/post/read/about"
       >
         About
       </a>
@@ -143,7 +143,7 @@ exports[`Menu renders correctly when the user is logged in 1`] = `
       </a>
       <a
         className="navbar-item"
-        href="/about"
+        href="/post/read/about"
       >
         About
       </a>
@@ -194,7 +194,7 @@ exports[`Menu renders correctly when the user is logged in 2`] = `
       </a>
       <a
         className="navbar-item"
-        href="/about"
+        href="/post/read/about"
       >
         About
       </a>
