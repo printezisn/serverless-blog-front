@@ -102,7 +102,10 @@ export class EditPost extends React.Component {
             id: post.id || "",
             title: post.title || "",
             description: post.description || "",
+            tags: post.tags || "",
             body: post.body || "",
+            template: post.template || "",
+            category: post.category || "",
             errors: [],
             successMessages: [],
             isPreviewOpen: false,
@@ -137,7 +140,10 @@ export class EditPost extends React.Component {
             id: this.state.id,
             title: this.state.title,
             description: this.state.description,
+            tags: this.state.tags,
             body: this.state.body,
+            template: this.state.template,
+            category: this.state.category,
             revision: isForEdit ? this.props.post.revision : 1,
         }
 
@@ -271,6 +277,72 @@ export class EditPost extends React.Component {
                                         value={this.state.description}
                                         onChange={this.handleInputChange}
                                     ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="field is-horizontal">
+                        <div className="field-label is-normal required-label">
+                            <label className="label" htmlFor="post-tags">
+                                Tags
+                            </label>
+                        </div>
+                        <div className="field-body">
+                            <div className="field">
+                                <div className="control">
+                                    <input
+                                        id="post-tags"
+                                        name="tags"
+                                        className="input"
+                                        type="text"
+                                        placeholder="The tags of the post."
+                                        value={this.state.tags}
+                                        onChange={this.handleInputChange}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="field is-horizontal">
+                        <div className="field-label is-normal required-label">
+                            <label className="label" htmlFor="post-template">
+                                Template
+                            </label>
+                        </div>
+                        <div className="field-body">
+                            <div className="field">
+                                <div className="control">
+                                    <input
+                                        id="post-template"
+                                        name="template"
+                                        className="input"
+                                        type="text"
+                                        placeholder="The template of the post."
+                                        value={this.state.template}
+                                        onChange={this.handleInputChange}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="field is-horizontal">
+                        <div className="field-label is-normal required-label">
+                            <label className="label" htmlFor="post-category">
+                                Category
+                            </label>
+                        </div>
+                        <div className="field-body">
+                            <div className="field">
+                                <div className="control">
+                                    <input
+                                        id="post-category"
+                                        name="category"
+                                        className="input"
+                                        type="text"
+                                        placeholder="The category of the post."
+                                        value={this.state.category}
+                                        onChange={this.handleInputChange}
+                                    />
                                 </div>
                             </div>
                         </div>
