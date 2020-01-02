@@ -1,60 +1,15 @@
 const postLoader = require("./app/postLoader")
 
 exports.createPages = async ({ actions: { createPage } }) => {
-    const pages = await loadAllPostPages()
-    if (pages.length === 0) {
-        createPage({
-            path: "/",
-            component: require.resolve("./src/templates/postPage.js"),
-            context: {
-                prevPagePath: "",
-                nextPagePath: "",
-                page: [],
-                siteUrl: postLoader.getSiteUrl(),
-            },
-        })
+    const posts = await loadAllPosts()
+    const regularPosts = posts.filter(post => post.category === "regular")
+    const nonRegularPosts = posts.filter(post => post.category !== "regular")
 
-        return
-    }
-
-    pages.forEach((page, index) => {
-        let prevPagePath = ""
-        if (index === 1) {
-            prevPagePath = "/"
-        } else if (index > 0) {
-            prevPagePath = `/post/page/${index}`
-        }
-
-        const nextPagePath =
-            index === pages.length - 1 ? "" : `/post/page/${index + 2}`
-        const pagePath = index === 0 ? "/" : `/post/page/${index + 1}`
-
-        createPage({
-            path: pagePath,
-            component: require.resolve("./src/templates/postPage.js"),
-            context: {
-                prevPagePath,
-                nextPagePath,
-                page,
-                siteUrl: postLoader.getSiteUrl(),
-            },
-        })
-
-        page.forEach(post => {
-            createPage({
-                path: `/post/read/${post.id}`,
-                component: require.resolve("./src/templates/post.js"),
-                context: {
-                    post,
-                    pagePath,
-                    siteUrl: postLoader.getSiteUrl(),
-                },
-            })
-        })
-    })
+    createRegularPostPages(regularPosts, createPage)
+    nonRegularPosts.forEach(post => createPostPage(post, "/", createPage))
 }
 
-async function loadAllPostPages() {
+async function loadAllPosts() {
     let lastID = ""
     let posts = []
 
@@ -87,16 +42,56 @@ async function loadAllPostPages() {
         return 0
     })
 
-    // Put them into pages
-    const pageSize = 10
-    let pages = []
+    return posts
+}
+
+function createRegularPostPages(posts, createPage) {
+    const pageSize = 10,
+        pages = [[]]
+
     posts.forEach(post => {
-        if (pages.length === 0 || pages[pages.length - 1].length === pageSize) {
+        if (pages[pages.length - 1].length === pageSize) {
             pages.push([])
         }
 
         pages[pages.length - 1].push(post)
     })
 
-    return pages
+    pages.forEach((page, index) => {
+        let prevPagePath = ""
+        if (index === 1) {
+            prevPagePath = "/"
+        } else if (index > 0) {
+            prevPagePath = `/post/page/${index}`
+        }
+
+        const nextPagePath =
+            index === pages.length - 1 ? "" : `/post/page/${index + 2}`
+        const pagePath = index === 0 ? "/" : `/post/page/${index + 1}`
+
+        createPage({
+            path: pagePath,
+            component: require.resolve("./src/templates/postPage.js"),
+            context: {
+                prevPagePath,
+                nextPagePath,
+                page,
+                siteUrl: postLoader.getSiteUrl(),
+            },
+        })
+
+        page.forEach(post => createPostPage(post, pagePath, createPage))
+    })
+}
+
+function createPostPage(post, pagePath, createPage) {
+    createPage({
+        path: `/post/read/${post.id}`,
+        component: require.resolve(`./src/templates/post/${post.template}.js`),
+        context: {
+            post,
+            pagePath,
+            siteUrl: postLoader.getSiteUrl(),
+        },
+    })
 }
