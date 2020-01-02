@@ -126,6 +126,111 @@ exports[`Create post renders correctly initially 1`] = `
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -345,6 +450,111 @@ exports[`Create post renders correctly when preview is closed 1`] = `
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -550,6 +760,111 @@ exports[`Create post renders correctly when preview is open 1`] = `
               onChange={[Function]}
               placeholder="The description of the post."
               rows="5"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
               value=""
             />
           </div>
@@ -787,6 +1102,111 @@ exports[`Create post renders correctly when submit has unexpected failure 1`] = 
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -1010,6 +1430,111 @@ exports[`Create post renders correctly when submit has validation errors 1`] = `
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -1220,6 +1745,111 @@ exports[`Create post renders correctly when submit is successful 1`] = `
               placeholder="The description of the post."
               rows="5"
               value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category"
             />
           </div>
         </div>
@@ -1460,6 +2090,111 @@ exports[`Edit post renders correctly initially 1`] = `
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -1679,6 +2414,111 @@ exports[`Edit post renders correctly when preview is closed 1`] = `
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -1885,6 +2725,111 @@ exports[`Edit post renders correctly when preview is open 1`] = `
               placeholder="The description of the post."
               rows="5"
               value="post description"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category"
             />
           </div>
         </div>
@@ -2121,6 +3066,111 @@ exports[`Edit post renders correctly when submit has unexpected failure 1`] = `
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -2344,6 +3394,111 @@ exports[`Edit post renders correctly when submit has validation errors 1`] = `
       >
         <label
           className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
           htmlFor="post-body"
         >
           Body
@@ -2554,6 +3709,111 @@ exports[`Edit post renders correctly when submit is successful 1`] = `
               placeholder="The description of the post."
               rows="5"
               value="post description 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-tags"
+        >
+          Tags
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-tags"
+              name="tags"
+              onChange={[Function]}
+              placeholder="The tags of the post."
+              type="text"
+              value="post-tag2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-template"
+        >
+          Template
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-template"
+              name="template"
+              onChange={[Function]}
+              placeholder="The template of the post."
+              type="text"
+              value="postTemplate2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label is-normal required-label"
+      >
+        <label
+          className="label"
+          htmlFor="post-category"
+        >
+          Category
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              id="post-category"
+              name="category"
+              onChange={[Function]}
+              placeholder="The category of the post."
+              type="text"
+              value="post-category2"
             />
           </div>
         </div>

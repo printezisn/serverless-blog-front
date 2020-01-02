@@ -2,8 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Markdown from "../components/markdown"
+import Layout from "../../components/layout"
+import Markdown from "../../components/markdown"
 
 export default ({ pageContext: { post, siteUrl, pagePath } }) => (
     <Layout compact={true}>
@@ -12,6 +12,7 @@ export default ({ pageContext: { post, siteUrl, pagePath } }) => (
             <title>{post.title} | Edna Blog</title>
             <meta charset="utf-8" />
             <meta name="description" content={post.description} />
+            <meta name="keywords" content={post.tags} />
             <meta name="author" content="Nikos Printezis" />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="website" />

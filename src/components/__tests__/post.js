@@ -143,7 +143,10 @@ describe("Create post", () => {
         id: "post id",
         title: "post title",
         description: "post description",
+        tags: "post-tag",
         body: "post body",
+        template: "postTemplate",
+        category: "post-category",
         revision: 1,
     }
 
@@ -219,14 +222,20 @@ describe("Edit post", () => {
         id: "post id",
         title: "post title",
         description: "post description",
+        tags: "post-tag",
         body: "post body",
+        template: "postTemplate",
+        category: "post-category",
         revision: 2,
     }
     const updatedPost = {
         id: "post id",
         title: "post title 2",
         description: "post description 2",
+        tags: "post-tag2",
         body: "post body 2",
+        template: "postTemplate2",
+        category: "post-category2",
         revision: 2,
     }
 
