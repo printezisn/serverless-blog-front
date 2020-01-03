@@ -6,12 +6,12 @@ class Auth {
     constructor() {
         const rootUrl = process.env.GATSBY_EDNABLOG_SITE_ROOT_URL
         const authData = {
-            ClientId: "7icdk42lkcj7fevgp2lgss0aio",
-            AppWebDomain: "ednablog.auth.ca-central-1.amazoncognito.com",
+            ClientId: process.env.GATSBY_COGNITO_CLIENT_ID,
+            AppWebDomain: process.env.GATSBY_COGNITO_APP_WEB_DOMAIN,
             TokenScopesArray: ["email", "openid"],
             RedirectUriSignIn: rootUrl,
             RedirectUriSignOut: rootUrl,
-            UserPoolId: "ca-central-1_zPiF08WsY",
+            UserPoolId: process.env.GATSBY_COGNITO_USER_POOL_ID,
             AdvancedSecurityDataCollectionFlag: false,
         }
 

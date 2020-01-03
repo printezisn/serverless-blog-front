@@ -95,11 +95,13 @@ class InternalDelete extends React.Component {
             <Layout compact={true}>
                 <Helmet>
                     <html lang="en" />
-                    <title>Delete Post | Edna Blog</title>
+                    <title>
+                        {`Delete Post | ${process.env.GATSBY_EDNABLOG_SITE_TITLE}`}
+                    </title>
                     <meta charset="utf-8" />
                     <meta
                         name="description"
-                        content="Delete a blog post in Edna Blog."
+                        content={`Delete a blog post in ${process.env.GATSBY_EDNABLOG_SITE_TITLE}.`}
                     />
                 </Helmet>
                 <PostLoader

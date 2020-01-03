@@ -35,11 +35,13 @@ class InternalEdit extends React.Component {
             <Layout>
                 <Helmet>
                     <html lang="en" />
-                    <title>Edit Post | Edna Blog</title>
+                    <title>
+                        {`Edit Post | ${process.env.GATSBY_EDNABLOG_SITE_TITLE}`}
+                    </title>
                     <meta charset="utf-8" />
                     <meta
                         name="description"
-                        content="Edit a blog post in Edna Blog."
+                        content={`Edit a blog post in ${process.env.GATSBY_EDNABLOG_SITE_TITLE}`}
                     />
                 </Helmet>
                 <article>

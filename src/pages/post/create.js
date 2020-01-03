@@ -8,11 +8,11 @@ export default () => (
     <Layout>
         <Helmet>
             <html lang="en" />
-            <title>New Post | Edna Blog</title>
+            <title>{`New Post | ${process.env.GATSBY_EDNABLOG_SITE_TITLE}`}</title>
             <meta charset="utf-8" />
             <meta
                 name="description"
-                content="Create a new blog post in Edna Blog."
+                content={`Create a new blog post in ${process.env.GATSBY_EDNABLOG_SITE_TITLE}.`}
             />
         </Helmet>
         <article>

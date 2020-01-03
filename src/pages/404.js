@@ -7,11 +7,13 @@ export default () => (
     <Layout>
         <Helmet>
             <html lang="en" />
-            <title>Page Not Found | Edna Blog</title>
+            <title>
+                {`Page Not Found | ${process.env.GATSBY_EDNABLOG_SITE_TITLE}`}
+            </title>
             <meta charset="utf-8" />
             <meta
                 name="description"
-                content="The page was not found in Edna Blog."
+                content={`The page was not found in ${process.env.GATSBY_EDNABLOG_SITE_TITLE}.`}
             />
         </Helmet>
         <article className="has-text-centered">

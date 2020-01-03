@@ -10,11 +10,11 @@ export default () => (
             <h1 className="title is-1 has-text-centered">
                 <Link to="/">
                     <i className="fas fa-laptop-code"></i>
-                    EDNA Blog
+                    {process.env.GATSBY_EDNABLOG_SITE_TITLE}
                 </Link>
             </h1>
             <p className="subtitle has-text-centered">
-                (E)very (D)eveloper (N)eeds (A) blog
+                {process.env.GATSBY_EDNABLOG_SITE_SUBTITLE}
             </p>
         </div>
     </header>

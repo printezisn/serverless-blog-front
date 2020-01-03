@@ -15,7 +15,7 @@ exports[`Header renders correctly 1`] = `
         <i
           className="fas fa-laptop-code"
         />
-        EDNA Blog
+        Edna Blog
       </a>
     </h1>
     <p
