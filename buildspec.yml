@@ -9,8 +9,6 @@ phases:
             - npm install
     build:
         commands:
-            - echo "GATSBY_EDNABLOG_ROOT_URL=$GATSBY_EDNABLOG_ROOT_URL" > ./.env.production
-            - cat ./.env.production
             - npm run test
             - npm run build
 artifacts:
