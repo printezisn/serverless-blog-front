@@ -10,7 +10,7 @@ window.cookieconsent.initialise({
     content: {
         href: "/post/read/cookie-policy",
     },
-    revokable: true,
+    revokable: false,
     law: {
         regionalLaw: false,
     },
