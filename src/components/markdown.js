@@ -7,7 +7,8 @@ export default class Markdown extends React.Component {
     static createRenderer() {
         const renderer = new marked.Renderer()
         renderer.heading = function(text, level) {
-            return `<h${level} class="title is-${level}">${text}</h${level}>`
+            return `<h${level} class="title is-${level +
+                1}">${text}</h${level}>`
         }
 
         return renderer
