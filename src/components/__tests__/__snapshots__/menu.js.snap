@@ -45,6 +45,12 @@ exports[`Menu renders correctly when it's active 1`] = `
       >
         About
       </a>
+      <a
+        className="navbar-item"
+        href="/post/read/cookie-policy"
+      >
+        Cookie Policy
+      </a>
       
     </div>
   </div>
@@ -95,6 +101,12 @@ exports[`Menu renders correctly when it's not active 1`] = `
         href="/post/read/about"
       >
         About
+      </a>
+      <a
+        className="navbar-item"
+        href="/post/read/cookie-policy"
+      >
+        Cookie Policy
       </a>
       
     </div>
@@ -147,6 +159,12 @@ exports[`Menu renders correctly when the user is logged in 1`] = `
       >
         About
       </a>
+      <a
+        className="navbar-item"
+        href="/post/read/cookie-policy"
+      >
+        Cookie Policy
+      </a>
       
     </div>
   </div>
@@ -197,6 +215,12 @@ exports[`Menu renders correctly when the user is logged in 2`] = `
         href="/post/read/about"
       >
         About
+      </a>
+      <a
+        className="navbar-item"
+        href="/post/read/cookie-policy"
+      >
+        Cookie Policy
       </a>
       <a
         className="navbar-item logout-button"

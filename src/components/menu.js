@@ -86,6 +86,12 @@ export default class Menu extends React.Component {
                         <Link className="navbar-item" to="/post/read/about">
                             About
                         </Link>
+                        <Link
+                            className="navbar-item"
+                            to="/post/read/cookie-policy"
+                        >
+                            Cookie Policy
+                        </Link>
                         {logOutLink}
                     </div>
                 </div>

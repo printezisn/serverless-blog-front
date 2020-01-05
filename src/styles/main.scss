@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "~bulma/bulma.sass";
+@import "~cookieconsent/build/cookieconsent.min.css";
 
 html {
     background-color: $grey-lightest;
@@ -66,4 +67,21 @@ h2 {
 
 .clearfix {
     clear: both;
+}
+
+.cc-revoke,
+.cc-window {
+    font-family: $family-primary;
+    background: $white;
+    border-top: solid 1px $grey-lighter;
+}
+
+.cc-link:active,
+.cc-link:visited {
+    color: $blue;
+}
+
+.cc-link:active,
+.cc-link:hover {
+    color: $grey-darker;
 }
