@@ -3,8 +3,6 @@
 A series of projects showing how you can build a serverless blog in AWS. This project contains the front-end part of the application.
 You can find the back-end part in https://github.com/printezisn/serverless-blog-back.
 
-My personal blog was built this way: https://ednablog.com.
-
 ## How it Works
 
 The project is built in React and GatsbyJS and is meant to serve as a static website hosted on S3, using CloudFront as a CDN.
